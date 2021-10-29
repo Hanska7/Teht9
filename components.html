@@ -2,6 +2,7 @@
 <head>
     <meta charset="utf-8">
     <title>Tehtävä yhdeksän</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="mystyles.css" rel="stylesheet">
 
@@ -58,13 +59,40 @@
         </p>
 
 
-    <h5>Neljäs komponentti
-        
+    <h5>Neljäs komponentti</h5>
+    <p>Neljäs on nappi</p>
+
+    <h6>Nappi yksi</h6>
+    
+    <button onclick="function(funktio)" .nappi1 type="button" class="btn">Perusnappi</button>
+    
+    <script>
+        function funktio() {
+            document.getElementById("väri").style.backgroundColor = "green";
+        }
+    </script>
 
 
-        </h5>
+    <h6>Nappi kaksi</h6>
+    <button onclick="function(funktio2)" .nappi2 type="button" class="btn-default">Standardinappi</button>
+    <script>
+        function funktio2() {
+            document.getElementById("väri").style.backgroundColor = "red";
 
 
+        }
+    </script>
+
+
+
+    <h6>Nappi kolme</h6>
+    <button onclick="function(funktio3)" .nappi3 type="button" class="btn-success">Onnistumisnappi</button>
+    <script>
+        function funktio3() {
+            document.getElementById("väri").style.backgroundColor = "white";
+
+        }
+    </script>
 
 
 
