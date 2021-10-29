@@ -9,24 +9,23 @@
 
     </head>
 
-<body #alku>
+
+    
+<body id="alku">
     <header>Komponenttilista</header>
     
     <nav class="navbar fixed-top navbar-expand-lg">Navigaatio
-    <button class="navbar-toggler" type="button" data-toggle="collapse">
         <a href="#alku">Navigaatio tulee mukana (alkuun)</a>
-        </button>
 
-        <ul class="navbar-nav">
-            <li><a href="#alku">Tästä alkuun<br>
-            </a></li>
+        <a href="#alku">Tästä alkuun<br>
+        </a>
 
-            <li><a href="#keski">Tästä keskelle<br>
-            </a></li>
+        <a href="#keski">Tästä keskelle<br>
+        </a>
 
-            <li><a href="#loppu">Tästä loppuun<br>
-                </a></li>
-            </ul>
+        <a href="#loppu">Tästä loppuun<br>
+        </a>
+            
 
         </nav>
 
@@ -34,7 +33,9 @@
     <h1>Ajatusprosessin alku</h1>
 
     <h2>Ensimmäinen komponentti</h2>
-    <p #keski>Navigaatio ylälaidassa</p>
+    <p>Navigaatio ylälaidassa</p>
+
+   
 
     <h3>Toinen komponentti</h3>
     <p>Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo.
@@ -44,7 +45,7 @@
         quis autem vel eum iure reprehenderit, qui in ea voluptate velit esse, quam nihil molestiae consequatur, vel illum, qui dolorem eum fugiat, quo voluptas nulla pariatur?
         </p>
         
-    <h3>Kolmas komponentti</h3>
+    <h3 id="keski">Kolmas komponentti</h3>
 
     <h4>Nestemäinen kuva kuulostaa taiteelliselta</h4><br>
         <img class="img-fluid" src="Maslow.png" alt="Maslow tarvehierarkia">
@@ -66,22 +67,30 @@
     
     <button onclick="funktio()" .nappi1 type="button" class="btn">Perusnappi</button>
     
+    <!--
+
     <script>
         function funktio() {
             document.getElementById("väri").style.backgroundColor = "green";
         }
     </script>
-
+    -->
 
     <h6>Nappi kaksi</h6>
     <button onclick="funktio2()" .nappi2 type="button" class="btn-default">Standardinappi</button>
-    <script>
+    
+    
+    <!----
+        
+        <script>
         function funktio2() {
             document.getElementById("väri").style.backgroundColor = "red";
 
 
         }
     </script>
+
+-->
 
 
 
@@ -97,11 +106,12 @@
 
 
 
-    <h6>Loppukaneetin aika</h6>
+    <h6 id="loppu">Loppukaneetin aika</h6>
     <p>Parempi kuunnella ajatuksella ennenkuin tekee päätöksen</p>
-    <p #loppu>Insinöörin hätiköinti johtaa hyvään, mutta väärään, ratkaisuun</p>
+    <p>Insinöörin hätiköinti johtaa hyvään, mutta väärään, ratkaisuun</p>
     <a href="#alku">Siispä tästä pääset kätevästi takaisin prosessisi alkuun</a><br>
     <a href="https://hanska7.github.io/Teht6/third.html">Takaisin valikkoon</a>
 
+    
     </body>
 </html>
